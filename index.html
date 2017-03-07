@@ -3,33 +3,6 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
-      .ImgSlider{
-        width: 960px;
-        height: 524px;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid #ccc;
-      }
-      .ImgSlider ul.list {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        position: absolute;
-        width: 9999px;
-        height: 100%;
-      }
-
-      .ImgSlider ul.list li{
-        float: left;
-        width: 960px;
-        height: 100%;
-      }
-      .ImgSlider .list img{
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-
     </style>
   </head>
   <body>
@@ -41,17 +14,6 @@
       </ul>
     </div>
     <script>
-      $(function(){
-        var $block = $('.ImgSlider'),
-            $slides = $('ul.list', $block),
-            _width = $block.width(),
-            $li = $('li', $slides),
-            animateSpeed = 600, 
-            timer, _showSpeed = 3000, _stop = false;
-        function move(){
-            var _index = $('.current').index();
-        }
-      });
     </script>
   </body>
 </html>   
