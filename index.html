@@ -40,5 +40,17 @@
         <li><img src="http://i.imgur.com/5yczPdK.jpg" width=“960" height="524" alt="" /></li>
       </ul>
     </div>
+    <script>
+      $(function(){
+        var $block = $('.ImgSlider'),
+            $slides = $('ul.list', $block),
+            _width = $block.width(),
+            $li = $('li', $slides),
+            animateSpeed = 600, 
+            timer, _showSpeed = 3000, _stop = false;
+        function move(){
+            var _index = $('.current').index();
+        }
+    </script>
   </body>
 </html>   
