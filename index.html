@@ -1,1 +1,62 @@
-hello
+<!DOCTYPE html>                                                                                                                              
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+      .flexslider, .flexslider-controls {
+        max-width: 960px;
+      }
+
+      .slide_text {
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.5);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
+        bottom: 0;
+        color: #fff;
+        display: block;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6–IE9 */
+        left: 0;
+        padding: 1em;
+        position: absolute;
+        width: 100%;
+        zoom: 1;
+      }
+
+      .slide_title {
+        font-size: 1.2em;
+        text-transform: uppercase;
+      }
+
+      .slide_byline {
+        font-size: 0.8em;
+        display: block;  
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="http://i.imgur.com/Kr4xXkU.jpg" width=“960” height="524" alt="" />
+          <div class="slide_text">
+            <div class="slide_title">Title of Slide 1</div>
+            <div class="slide_byline">Teaser text for slide 1</div>
+          </div>
+        </li>
+        <li>
+          <img src="http://i.imgur.com/f2Dj18v.jpg" width=“960" height="524" alt="" />
+          <div class="slide_text">
+            <div class="slide_title">Title of Slide 2</div>
+            <div class="slide_byline">Teaser text for slide 2</div>
+          </div>
+        </li>
+        <li>
+          <img src="http://i.imgur.com/5yczPdK.jpg" width=“960" height="524" alt="" />
+          <div class="slide_text">
+            <div class="slide_title">Title of Slide 3</div>
+            <div class="slide_byline">Teaser text for slide 3</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>   
