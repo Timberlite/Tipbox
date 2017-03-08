@@ -8,31 +8,30 @@
   </head>
   <body>
     <div class="ImgSlider">
-      
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="http://i.imgur.com/Kr4xXkU.jpg" />
-              </div>
-              <div class="item">
-                <img src="http://i.imgur.com/f2Dj18v.jpg" />                                                                                         
-              </div>
-              <div class="slide">
-                <img src="http://i.imgur.com/5yczPdK.jpg" />                                                                                         
-              </div>
-            </div>
-            <script>
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: false
-              });
-            })
-            </script>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="http://i.imgur.com/Kr4xXkU.jpg" />
+        </div>
+        <div class="item">
+          <img src="http://i.imgur.com/f2Dj18v.jpg" />                                                                                         
+        </div>
+        <div class="slide">
+          <img src="http://i.imgur.com/5yczPdK.jpg" />                                                                                         
+        </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false
+          });
+        })
+      </script>
     </div>
   </body>
 </html>   
