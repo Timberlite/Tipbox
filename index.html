@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <style>
-      .ImgSlider{  
+      .slider{  
         margin:0;
         padding:0;
       }
@@ -15,11 +15,35 @@
         width    : 100%;
         height   : auto; 
       }
+      @keyframes slidy {
+      0% { left: 0%; }
+      20% { left: 0%; }
+      25% { left: -100%; }
+      45% { left: -100%; }
+      50% { left: -200%; }
+      70% { left: -200%; }
+      75% { left: -300%; }
+      95% { left: -300%; }
+      100% { left: -400%; }
+      }
+
+      body { margin: 0; } 
+      div#slider { overflow: hidden; }
+      div#slider figure img { width: 20%; float: left; }
+      div#slider figure { 
+        position: relative;
+          width: 500%;
+            margin: 0;
+              left: 0;
+                text-align: left;
+                  font-size: 0;
+                    animation: 30s slidy infinite; 
+                    }
       
     </style>
   </head>
   <body style="margin: 0;">
-    <div class="ImgSlider">
+    <div class="slider">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <img src="http://i.imgur.com/Kr4xXkU.jpg" width="960" height="650" />
@@ -31,7 +55,7 @@
           <img src="http://i.imgur.com/rVo8SsK.jpg" width="960" height="650"/>                                                                                         
         </div>
       </div>
-      <script>
+      <!--<script>
         $(document).ready(function() {
           var owl = $('.owl-carousel');
           owl.owlCarousel({
@@ -43,7 +67,7 @@
             autoplayHoverPause: false
           });
         })
-      </script>
+      </script>-->
     </div>
 
   </body>
