@@ -1,19 +1,35 @@
 <!DOCTYPE html>                                                                                                                              
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
     </style>
   </head>
   <body>
     <div class="ImgSlider">
-      <ul class="slides">
-        <li><img src="http://i.imgur.com/Kr4xXkU.jpg" width=“960” height="524" alt="" /></li>
-        <li><img src="http://i.imgur.com/f2Dj18v.jpg" width=“960" height="524" alt="" /></li>
-        <li><img src="http://i.imgur.com/5yczPdK.jpg" width=“960" height="524" alt="" /></li>
-      </ul>
+      <div class="slide">
+        <img src="http://i.imgur.com/Kr4xXkU.jpg" />
+      </div>
+      <div class="slide">
+        <img src="http://i.imgur.com/f2Dj18v.jpg" />                                                                                         
+      </div>
+      <div class="slide">
+        <img src="http://i.imgur.com/5yczPdK.jpg" />                                                                                         
+      </div>
     </div>
     <script>
+      $(".ImgSlider").owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true 
+      })
     </script>
   </body>
 </html>   
