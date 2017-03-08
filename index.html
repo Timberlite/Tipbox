@@ -8,15 +8,6 @@
   </head>
   <body>
     <div class="ImgSlider">
-     <!-- <div class="slide">
-        <img src="http://i.imgur.com/Kr4xXkU.jpg" />
-      </div>
-      <div class="slide">
-        <img src="http://i.imgur.com/f2Dj18v.jpg" />                                                                                         
-      </div>
-      <div class="slide">
-        <img src="http://i.imgur.com/5yczPdK.jpg" />                                                                                         
-      </div>-->
       <section id="demos">
         <div class="row">
           <div class="large-12 columns">
@@ -31,22 +22,6 @@
                 <img src="http://i.imgur.com/5yczPdK.jpg" />                                                                                         
               </div>
             </div>
-            <pre><code>var owl = $(&#39;.owl-carousel&#39;);
-                owl.owlCarousel({
-                  items:1,
-                  loop:true,
-                  margin:10,
-                  autoplay:true,
-                  autoplayTimeout:1000,
-                  autoplayHoverPause:true
-                });
-                $(&#39;.play&#39;).on(&#39;click&#39;,function(){
-                  owl.trigger(&#39;play.owl.autoplay&#39;,[1000])
-                })
-                $(&#39;.stop&#39;).on(&#39;click&#39;,function(){
-                  owl.trigger(&#39;stop.owl.autoplay&#39;)
-                })
-            </code></pre>
             <script>
             $(document).ready(function() {
               var owl = $('.owl-carousel');
@@ -58,12 +33,6 @@
                 autoplayTimeout: 1000,
                 autoplayHoverPause: true
               });
-              $('.play').on('click', function() {
-                owl.trigger('play.owl.autoplay', [1000])
-              })
-              $('.stop').on('click', function() {
-                owl.trigger('stop.owl.autoplay')
-              })
             })
             </script>
           </div>
