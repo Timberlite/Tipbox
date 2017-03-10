@@ -1,7 +1,7 @@
 <!DOCTYPE html>                                                                                                                              
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:b" rel="stylesheet">
   <style>
     @keyframes slidy {
     0% { left: 0%; }
@@ -22,47 +22,153 @@
       position: relative;
       width: 500%;
       margin: 0;
+      margin-top: -150px;
       left: 0;
       text-align: left;
       font-size: 0;
       animation: 30s slidy infinite; 
     }
+    div#logo{
+      	position:absolute;
+    	top:6%;
+    	left:7%;
+    	z-index:1;
+    }
     div.slide-content {
         position: absolute;
         top : 0px;
-        width: 40%;
-        height:100%;
-        padding: 30px;
-        background:rgba(0, 0, 0, 0.6);
-        margin: 0;
+        width: 48%;
+        height:90%;
+        padding-top:8%;
+        padding-left:8%; 
+        background:rgba(35, 31, 32, 0.9);
+        margin:0;
         box-sizing: border-box ;
         color: #fff;
         font-family: Quicksand;
-        font-style: bolder;
-        font-size: 22.5px;
-        font-variant: bold;
-        font-weight: 500;
-        line-height: 28px;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing:3px;
     }
+    div.logobar {
+        position: absolute;
+       	bottom : 0px;
+        width: 100%;
+        height:12%;
+        background:rgba(255, 255, 255, 1);
+        margin:0;
+        box-sizing: border-box ;
+        z-index:1;
+        padding-top:1%;
+    }
+    #visa{
+    	padding-left:5%;
+    }
+     #paypal{
+    	padding-left:5%;
+    }
+     #skill{
+    	padding-left:5%;
+    }
+     #wired{
+    	padding-left:5%;
+    }
+    #playicon{
+    	position:absolute;
+   		top:6%;
+    	left:36%;
+    	z-index:1;
+    }
+    #appleicon{
+    	position:absolute;
+   		top:6%;
+    	left:41%;
+    	z-index:1;
+    }
+    #text-in{
+    	border-radius: 30px 30px 30px 30px;
+    	margin-top:30px;
+    	height:52px;
+    	border-style:none;
+    	font-size:22px;
+    	width:350px;
+    	outline:none;
+    	font-family: Quicksand;
+    	letter-spacing:2px;
+    	padding-left:60px;
+    	background-image:url(http://i.imgur.com/B4vto0l.png);
+    	background-size:cover;
+    }
+    ::-webkit-input-placeholder { /* Chrome */
+ 	 	color: #727272;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+  		color: #727272;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+ 		color: #727272;
+ 		opacity: 1;
+	}
+	:-moz-placeholder { /* Firefox 4 - 18 */
+  		color: #727272;
+  		opacity: 1;
+	}
+	div.log{
+		position:absolute;
+   		top:3%;
+    	right:8%;
+    	z-index:1;
+		color:#fff;
+		font-family:Quicksand;	
+		letter-spacing:2px;
+	}
+	#signup{
+		margin-left:30px;
+		padding-left:18px;
+		padding-right:18px;
+		padding-top:2px;
+		height:30px;
+		background-color:#231f20;
+		border-radius: 20px 20px 20px 20px;
+	}
+    
   </style>
 </head>
 <body>
   <div id="slider">
     <figure>
-      <img src="http://i.imgur.com/Kr4xXkU.jpg" alt>
-      <img src="http://i.imgur.com/7fqbEOv.jpg" alt>
-      <img src="http://i.imgur.com/rVo8SsK.jpg" alt>
-      <img src="http://i.imgur.com/h31yTaQ.jpg" alt>
-      <img src="http://i.imgur.com/Kr4xXkU.jpg" alt>
+      <img src="http://i.imgur.com/XMCL1aU.jpg" alt>
+      <img src="http://i.imgur.com/Pz0CpUL.jpg" alt>
+      <img src="http://i.imgur.com/XMCL1aU.jpg" alt>
+      <img src="http://i.imgur.com/Pz0CpUL.jpg" alt>
+      <img src="http://i.imgur.com/XMCL1aU.jpg" alt>
     </figure>
   </div>
+  <div id="logo">
+  	<a href="https://timberlite.github.io/Tipbox/"><img src="http://i.imgur.com/A8NAFvy.png" width="120" alt ></a>
+  </div>
+  <div class="storeicon">
+  	<a href="https://play.google.com/store" target="_blank"><img id="playicon" src="http://i.imgur.com/XvyvzY1.png" height="36" alt ></a>
+  	<a href="https://itunes.apple.com/tw/genre/ios/id36?l=zh" target="_blank"><img id="appleicon" src="http://i.imgur.com/SijP3ta.png" height="36" alt ></a>
+  </div>
+  <div class="log">
+  	<H3 id="login" style="float: left;">Login</H3>
+   	<H3 id="signup" style="float: left;">Sign up</H3>
+  </div>
   <div class="slide-content">
-    <H1><b>Tip for your</b></H1>
-    <H1><b>favorite</b></H1>
-    <H1><b>Steet Artist</b></H1>
-    <H1><b>with</b></H1>
-    <H1><b>Paypal</b></H1>
+    <H1>Tip for your</H1>
+    <H1>favorite</H1>
+    <H1 style="font-style:italic;"><a style="color:white;" href="https://www.youtube.com/watch?v=7t3xBqAWLaU" target="_blank">Street Artist</a></H1>
+    <H1>with</H1>
+    <H1 style="font-style:italic;"><a style="color:white;" href="https://www.paypal.com/tw/home" target="_blank">Paypal.</a></H1>
+    <input type="text" id="text-in" placeholder="Type your city."></input>
+  </div>
+  <div class="logobar">
+  	<img id="visa" src="http://i.imgur.com/xiTgvP7.png" height="50" alt>
+  	<img id="paypal" src="http://i.imgur.com/9GVyM2G.png" height="50" alt>
+  	<img id="skill" src="http://i.imgur.com/De36AgZ.png" height="40" alt>
+  	<img id="wired" src="http://i.imgur.com/KF9WB8p.png" height="50" alt>
   </div>
 </body>
 </html>
-
