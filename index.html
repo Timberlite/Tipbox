@@ -4,15 +4,11 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:b" rel="stylesheet">
   <style>
     @keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    0% { left: -70%; }
+    40% { left: -70%; }
+    50% { left: -180%; }
+    90% { left: -180%; }
+    100% { left: -270%; }
     }
 
     body { margin: 0; } 
@@ -26,19 +22,19 @@
       left: 0;
       text-align: left;
       font-size: 0;
-      animation: 30s slidy infinite; 
+      animation: 15s slidy infinite; 
     }
     div#logo{
       	position:absolute;
     	top:6%;
-    	left:7%;
+    	left:12%;
     	z-index:1;
     }
     div.slide-content {
         position: absolute;
         top : 0px;
         width: 48%;
-        height:90%;
+        height:100%;
         padding-top:8%;
         padding-left:8%; 
         background:rgba(35, 31, 32, 0.9);
@@ -77,13 +73,13 @@
     #playicon{
     	position:absolute;
    		top:6%;
-    	left:36%;
+    	left:70%;
     	z-index:1;
     }
     #appleicon{
     	position:absolute;
    		top:6%;
-    	left:41%;
+    	left:80%;
     	z-index:1;
     }
     #text-in{
@@ -117,7 +113,7 @@
 	div.log{
 		position:absolute;
    		top:3%;
-    	right:8%;
+    	right:5%;
     	z-index:1;
 		color:#fff;
 		font-family:Quicksand;	
@@ -132,6 +128,59 @@
 		background-color:#231f20;
 		border-radius: 20px 20px 20px 20px;
 	}
+    div.howitwork{
+    	background-image:url("http://i.imgur.com/e0grW6W.png");
+    	background-size:contain;
+    	height:600px;
+    }
+    div.title{
+        font-family: Quicksand;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing:3px;
+        text-align:center;
+        padding-top:20px;
+    }
+    div.table1{
+        display: table;
+        width:89%;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    div.column1{
+        display: table-cell;
+        vertical-align:middle; 
+        text-align:center;
+    }
+    div.list_number{
+   		text-align:center;
+    }
+    #ln1,#ln2,#ln3,#ln4{
+    	font-family: Quicksand;
+        font-size: 25px;
+		margin-left:15%;
+		margin-right:5%;
+		width:30px;
+		height:30px;
+		color:#f2f2f2;
+		background-color:#f4511c;
+		border-radius: 20px 20px 20px 20px;
+	}
+	div.table2{
+        display: table;
+        width:90%;
+        margin-left:5%;
+        margin-top:3%;
+    }
+    div.column2{
+    	width:25%;
+    	font-family: Quicksand;
+        display: table-cell;
+        text-align:center;
+        letter-spacing:1px;
+        font-size:18px;
+    }
     
   </style>
 </head>
@@ -144,31 +193,75 @@
       <img src="http://i.imgur.com/Pz0CpUL.jpg" alt>
       <img src="http://i.imgur.com/XMCL1aU.jpg" alt>
     </figure>
-  </div>
-  <div id="logo">
-  	<a href="https://timberlite.github.io/Tipbox/"><img src="http://i.imgur.com/A8NAFvy.png" width="120" alt ></a>
-  </div>
-  <div class="storeicon">
-  	<a href="https://play.google.com/store" target="_blank"><img id="playicon" src="http://i.imgur.com/XvyvzY1.png" height="36" alt ></a>
-  	<a href="https://itunes.apple.com/tw/genre/ios/id36?l=zh" target="_blank"><img id="appleicon" src="http://i.imgur.com/SijP3ta.png" height="36" alt ></a>
-  </div>
-  <div class="log">
-  	<H3 id="login" style="float: left;">Login</H3>
-   	<H3 id="signup" style="float: left;">Sign up</H3>
-  </div>
-  <div class="slide-content">
-    <H1>Tip for your</H1>
-    <H1>favorite</H1>
-    <H1 style="font-style:italic;"><a style="color:white;" href="https://www.youtube.com/watch?v=7t3xBqAWLaU" target="_blank">Street Artist</a></H1>
-    <H1>with</H1>
-    <H1 style="font-style:italic;"><a style="color:white;" href="https://www.paypal.com/tw/home" target="_blank">Paypal.</a></H1>
-    <input type="text" id="text-in" placeholder="Type your city."></input>
-  </div>
+    <div class="slide-content">
+    	<div id="logo">
+  			<a href="https://timberlite.github.io/Tipbox/"><img src="http://i.imgur.com/A8NAFvy.png" width="120" alt ></a>
+ 		</div>
+ 		<div class="storeicon">
+  			<a href="https://play.google.com/store" target="_blank"><img id="playicon" src="http://i.imgur.com/XvyvzY1.png" height="36" alt ></a>
+  			<a href="https://itunes.apple.com/tw/genre/ios/id36?l=zh" target="_blank"><img id="appleicon" src="http://i.imgur.com/SijP3ta.png" height="36" alt ></a>
+  		</div>
+   		<H1>Tip for your</H1>
+    	<H1>favorite</H1>
+    	<H1 style="font-style:italic;"><a style="color:white;" href="https://www.youtube.com/watch?v=7t3xBqAWLaU" target="_blank">Street Artist</a></H1>
+    	<H1>with</H1>
+    	<H1 style="font-style:italic;"><a style="color:white;" href="https://www.paypal.com/tw/home" target="_blank">Paypal.</a></H1>
+    	<input type="text" id="text-in" placeholder="Type your city."></input>
+  	</div>
+  	<div class="log">
+  		<H3 id="login" style="float: left;">Login</H3>
+   		<H3 id="signup" style="float: left;">Sign up</H3>
+  	</div>
+  </div> 
   <div class="logobar">
   	<img id="visa" src="http://i.imgur.com/xiTgvP7.png" height="50" alt>
   	<img id="paypal" src="http://i.imgur.com/9GVyM2G.png" height="50" alt>
   	<img id="skill" src="http://i.imgur.com/De36AgZ.png" height="40" alt>
   	<img id="wired" src="http://i.imgur.com/KF9WB8p.png" height="50" alt>
+  </div>
+  <div class="howitwork">
+  	<div class="title"><H1>How it works</H1></div>
+  	<div class="table1">
+  		<div class="column1">
+  			<img src="http://i.imgur.com/FKaBowS.png" width="100"  alt>
+  		</div>
+  		<div class="column1">
+  			<img src="http://i.imgur.com/ImIsVnv.png" width="100" alt>
+  		</div>
+  		<div class="column1">
+  			<img src="http://i.imgur.com/PDPXKzN.png" width="100" alt>
+  		</div>
+  		<div class="column1">
+  			<img src="http://i.imgur.com/wJgIyfZ.png" width="90" alt>
+  		</div>
+  	</div>
+  	<div class="list_number">
+  		<H3 id="ln1" style="float: left;">1</H3>
+   		<H3 id="ln2" style="float: left;">2</H3>
+   		<H3 id="ln3" style="float: left;">3</H3>
+   		<H3 id="ln4" style="float: left;">4</H3>
+  	</div>
+  	<div class="table2">
+  		<div class="column2">
+			<H3>Find your favorite</H3>
+   			<H3>talent/service</H3>
+   			<H3>in your city.</H3>
+  		</div>
+  		<div class="column2">
+			<H3>Bind your</H3>
+   			<H3>payment</H3>
+   			<H3>method.</H3>
+  		</div>
+  		<div class="column2">
+			<H3>Pay with your</H3>
+   			<H3>digital wallet.</H3>
+  		</div>
+  		<div class="column2">
+			<H3>Check your your</H3>
+   			<H3>mobile</H3>
+   			<H3>and share.</H3>
+  		</div>
+  	</div>
   </div>
 </body>
 </html>
