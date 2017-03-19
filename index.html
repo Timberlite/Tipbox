@@ -11,7 +11,7 @@
     100% { left: -270%; }
     }
 
-    body { margin: 0; } 
+    html, body { height: 100%; margin: 0; padding: 0; }
     div#slider { overflow: hidden; }
     div#slider figure img { width: 20%; float: left; }
     div#slider figure {
@@ -88,11 +88,12 @@
     	height:52px;
     	border-style:none;
     	font-size:22px;
-    	width:350px;
+    	width:300px;
     	outline:none;
     	font-family: Quicksand;
     	letter-spacing:2px;
     	padding-left:60px;
+    	padding-right:60px;
     	background-image:url(http://i.imgur.com/B4vto0l.png);
     	background-size:cover;
     }
@@ -181,7 +182,90 @@
         letter-spacing:1px;
         font-size:18px;
     }
-    
+    #map { height: 80%; }
+    div.map-content {
+        position: relative;
+        top : 0px;
+        width: 60%;
+        height:80%;
+        padding-top:12%;
+        padding-left:10%; 
+        margin-top:-50%;
+        box-sizing: border-box ;
+        font-family: Quicksand;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 38px;
+        letter-spacing:3px;
+    }
+    div.vote{
+    	position: relative;
+    	background-image:url("http://i.imgur.com/WMwIHVf.jpg");
+    	background-size:cover;
+    	height:70%;
+        margin-top:60px;
+    }
+    div.vote-content{
+    	position: relative;
+        padding-top:6%;
+        padding-left:8%; 
+        height:100%;
+        box-sizing: border-box ;
+        background:rgba(35, 31, 32, 0.6);
+        color: #fff;
+        font-family: Quicksand;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing:3px;
+    }
+	div.bottom{
+    	position: relative;
+        height:55%;
+        background:rgba(35, 31, 32, 1);
+        font-family: Quicksand;
+        line-height: 20px;
+        letter-spacing:3px;
+        text-align:center;
+        padding-top:4%;
+    }
+    .bottom-title{
+    	color: #f4511c;
+    	font-size:48px;
+    }
+    div.bottom-bar{
+    	color: #fff;
+    	font-size:22px;
+    	margin-left:27%;	
+    }
+    .bar{
+    	margin-left:2%;
+    	margin-right:2%;
+    }
+    div.bstoreicon{
+    	margin-top:10%;
+    	position:relative;
+    	width:100%;	
+    }
+    #bplayicon{
+    	margin-left:0%;
+    	margin-right:5%;
+    }
+    .votetext{
+    	border-radius: 30px 30px 30px 30px;
+    	margin-top:30px;
+    	margin-right:5%;
+    	height:52px;
+    	border-style:none;
+    	font-size:22px;
+    	width:250px;
+    	outline:none;
+    	font-family: Quicksand;
+    	letter-spacing:2px;
+    	padding-left:25px;
+    	padding-right:25px;
+		
+    }
   </style>
 </head>
 <body>
@@ -263,5 +347,54 @@
   		</div>
   	</div>
   </div>
+  	<div id="map"></div>
+    <script type="text/javascript">
+		var map;
+		function initMap() {
+ 			map = new google.maps.Map(document.getElementById('map'), {
+    		center: {lat: 23.1, lng: 120.1},
+    		zoom: 11,
+    		scrollwheel: false
+  			});
+		}
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoXIHLDeOXJQbgK4CN1FcZ8ZBd7l_YZTE&callback=initMap"></script>
+  	<div class="map-content">
+   		<H1>Find your city.</H1>
+    	<H3>And your favorite talent/service.</H3>
+    	<input type="text" id="text-in" placeholder="Type your city."></input>
+  	</div>
+  	<div class="vote">
+  		<div class ="vote-content">
+  			<H1>Vote for our next city!</H1>
+  			<H3>We want to focus on cities</H3>
+  			<H3>where there is demand,</H3>
+  			<H3>and we can make a difference.</H3>
+  			<input type="text" class="votetext" style="float:left" placeholder="Choose your city"></input>
+  			<input type="text" class="votetext" style="float:left" placeholder="Your email"></input>
+  		</div>
+  	</div>
+  	<div class="bottom">
+  		<div id="logo2">
+  			<a href="https://timberlite.github.io/Tipbox/"><img src="http://i.imgur.com/A8NAFvy.png" width="150" alt ></a>
+ 		</div>
+ 		<H1 class="bottom-title">Tip your favorite talent/service!</H1>
+ 		<div class="bottom-bar">
+ 			<H3 style="float:left;">Company</H3>
+ 			<H3 style="float:left;" class="bar">|</H3>
+ 			<H3 style="float:left;">News</H3>
+ 			<H3 style="float:left;" class="bar">|</H3>
+ 			<H3 style="float:left;">Vote</H3>
+ 			<H3 style="float:left;" class="bar">|</H3>
+ 			<H3 style="float:left;">Contact</H3>
+ 		</div>
+ 		<div class="bstoreicon">
+  			<a href="https://play.google.com/store" target="_blank"><img id="bplayicon" src="http://i.imgur.com/BaAx1dS.png" height="50" alt ></a>
+  			<a href="https://itunes.apple.com/tw/genre/ios/id36?l=zh" target="_blank"><img id="bappleicon" src="http://i.imgur.com/Ya32rnQ.png" height="50" alt ></a>
+  		</div>
+  		<img src="http://i.imgur.com/RfpqiuG.png" height="80" alt >
+  	</div>
 </body>
 </html>
+
+
